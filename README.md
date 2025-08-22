@@ -6,32 +6,6 @@ This project enables users to create high-quality anime avatars from descriptive
 
 Some of the key features of this application include full control over prompt guidance, the number of inference steps, image transformation strength, and seed settings to ensure reproducibility. The app also automatically detects CUDA-enabled GPUs to accelerate generation and leverages FP16 or FP32 precision as needed. The Gradio-powered interface makes the experience interactive and simple, even for non-technical users.
 
-📥 Installation Instructions
-
-To get started, first clone the repository using:
-
-git clone https://github.com/yourusername/IMAGEtoAnime.git
-cd IMAGEtoAnime
-
-
-It is recommended (but optional) to create a virtual environment:
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-
-Next, install all required Python dependencies with:
-
-pip install -r requirements.txt
-
-
-Finally, run the application:
-
-python IMAGEtoAnime.py
-
-
-Once executed, the application will launch in your default web browser. If share=True is enabled in the script, Gradio will also generate a public URL so you can share the app externally.
-
 🧠 How It Works
 
 The script loads the anime-style Counterfeit-V2.5 model via Hugging Face and supports two generation pipelines. In Text-to-Anime, users provide a creative description, such as “A cyberpunk girl with silver hair and neon eyes,” and the model generates an anime-style portrait from scratch. In Image-to-Anime, users can upload a real human image and optionally include a style prompt like “wearing school uniform with glowing eyes.” The model then transforms the original image into an anime rendition while maintaining key facial features. Inference is optimized to use GPU acceleration with automatic precision handling — FP16 on CUDA devices and FP32 on CPU fallback.
