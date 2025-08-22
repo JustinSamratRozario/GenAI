@@ -22,7 +22,7 @@ Add your own images to the examples/ folder to showcase results.
 
 🚀 Getting Started
 1. Clone the Repository
-git clone https://github.com/yourusername/anime-avatar-generator.git
+git clone https://github.com/JustinSamratRozario/IMAGEtoAnime.py.git
 cd anime-avatar-generator
 
 2. Set Up a Virtual Environment
